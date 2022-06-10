@@ -10,7 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+
 import androidx.annotation.RequiresApi;
+import androidx.core.splashscreen.SplashScreen;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -81,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     // when you click on button and torch open and
-// you do not close the tourch again this code
-// will off the tourch automatically
+// you do not close the torch again this code
+// will off the torch automatically
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void finish() {
@@ -93,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
             // Inform the user about the flashlight
             // status using Toast message
-            Toast.makeText(SlaphScreen.this, "Flashlight is turned OFF", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(SplashScreen.this, "Flashlight is turned OFF", Toast.LENGTH_SHORT).show();
         } catch (CameraAccessException e) {
             // prints stack trace on standard error
             // output error stream
