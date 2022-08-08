@@ -9,41 +9,7 @@
     tools:context=".MainActivity"
     tools:ignore="HardcodedText">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="400dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="345dp"
-            android:background="@drawable/gradientbackground"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                android:text="Flashlight"
-                android:textColor="@color/black"
-                android:textSize="50sp"
-                android:textStyle="bold" />
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@android:color/darker_gray" />
-
-
-
-
-        </LinearLayout>
-
-    </RelativeLayout>
 
     <ToggleButton
         android:id="@+id/toggle_flashlight"
