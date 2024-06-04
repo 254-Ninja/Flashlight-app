@@ -9,16 +9,47 @@
     tools:context=".MainActivity"
     tools:ignore="HardcodedText">
 
-
-
     <ToggleButton
         android:id="@+id/toggle_flashlight"
         android:layout_width="200dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/flashlightonoff"
         android:onClick="toggleFlashLight"
         android:textSize="25sp" />
 
+    <ToggleButton
+        android:id="@+id/toggle_strobe"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/strobeonoff"
+        android:onClick="toggleStrobe"
+        android:text="Strobe"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_sos"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/sosbutton"
+        android:onClick="sendSOS"
+        android:text="SOS"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/battery_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="Battery Status"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
 </LinearLayout>
+
